@@ -30,7 +30,7 @@
         "From parents to children",
         "From children to parents",
         "Both ways",
-        "The developers decides"
+        "The developers decide"
       ],
       "correctOption": 0,
       "points": 10
@@ -64,7 +64,7 @@
       "points": 20
     },
     {
-      "question": "When do we directly \"touch\" the DOM in React?",
+      "question": "When do we directly 'touch' the DOM in React?",
       "options": [
         "When we need to listen to an event",
         "When we need to change the UI",
@@ -119,7 +119,7 @@
         "True",
         "It depends on the dependency array",
         "False",
-        "In depends on the code in the effect"
+        "It depends on the code in the effect"
       ],
       "correctOption": 0,
       "points": 30
@@ -249,31 +249,9 @@
     },
     {
       "question": "Which React feature allows you to share logic among components?",
-      "options": ["useReducer", "HOCs", "useEffect", "Hooks"],
-      "correctOption": 1,
-      "points": 25
-    },
-    {
-      "question": "What is the purpose of the React Context API?",
-      "options": [
-        "To replace the need for Redux",
-        "To make components re-render",
-        "To pass data through the component tree without prop drilling",
-        "To ensure component isolation"
-      ],
+      "options": ["useReducer", "HOCs", "Custom hooks", "useState"],
       "correctOption": 2,
       "points": 20
-    },
-    {
-      "question": "What will happen if you do not include a dependency in the dependency array of useEffect?",
-      "options": [
-        "The effect will run only once when the component mounts",
-        "The effect will run every time the component updates",
-        "The effect will never run",
-        "The component will re-render infinitely"
-      ],
-      "correctOption": 1,
-      "points": 30
     }
   ]
 }
