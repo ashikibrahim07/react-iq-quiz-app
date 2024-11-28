@@ -93,11 +93,24 @@ function QuizProvider({ children }) {
     0
   );
 
-  useEffect(function () {
+  useEffect(() => {
     fetch("/questions.json")
-      .then((res) => res.json())
-      .then((data) => dispatch({ type: "dataReceived", payload: data }))
-      .catch((err) => dispatch({ type: "dataFailed", payload: err }));
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return res.json();
+      })
+      .then((data) => {
+        // Access the questions array from the data
+        const questions = data.questions;
+
+        // Dispatch the questions to the reducer
+        dispatch({ type: "dataReceived", payload: questions });
+      })
+      .catch((err) => {
+        dispatch({ type: "dataFailed", payload: err });
+      });
   }, []);
 
   return (
