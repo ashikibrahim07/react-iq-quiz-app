@@ -252,6 +252,28 @@
       "options": ["useReducer", "HOCs", "Custom hooks", "useState"],
       "correctOption": 2,
       "points": 20
+    },
+    {
+      "question": "What is the purpose of the 'key' prop in React when rendering a list of items?",
+      "options": [
+        "To uniquely identify each item in the list",
+        "To specify the order of items in the list",
+        "To enable animations when the list changes",
+        "To improve the performance of the list rendering"
+      ],
+      "correctOption": 0,
+      "points": 30
+    },
+    {
+      "question": "When should you use 'shouldComponentUpdate' in a React component?",
+      "options": [
+        "When you want to prevent a component from re-rendering",
+        "When you want to force a component to re-render",
+        "When you want to optimize the performance of a component",
+        "When you want to handle an event in a component"
+      ],
+      "correctOption": 1,
+      "points": 30
     }
   ]
 }

@@ -28,6 +28,7 @@ body {
   background-color: var(--color-darkest);
   padding: 3.2rem;
   margin: 0;
+  overflow-y: hidden;
 }
 
 .app {
@@ -265,6 +266,7 @@ progress {
   padding: 2rem;
   text-align: center;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .footer-content {
