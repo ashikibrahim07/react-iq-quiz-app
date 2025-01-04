@@ -279,6 +279,14 @@ progress {
   font-size: 2rem;
 }
 
+.footer a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
 /* Mobile devices */
 @media (max-width: 600px) {
   html {
